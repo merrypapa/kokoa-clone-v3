@@ -1,0 +1,74 @@
+.friends__list {
+  /* margin-top: 150px; */
+  display: flex;
+}
+
+.friends__list__ul {
+  width: 100%;
+}
+
+.friends__list__header {
+  border-top: var(--border-setting);
+  width: 100%;
+}
+
+.friends__list__header {
+  padding-top: 15px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+}
+
+.profile__photo__friends {
+  width: 45px;
+  height: 45px;
+}
+
+.profile__photo__chats {
+  width: 42px;
+  height: 42px;
+}
+
+.profile__title__friends {
+  font-size: 18px;
+}
+
+.friends__list__li {
+  padding: 5px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile__status__friends {
+  margin-top: 5px;
+  font-size: 14px;
+  color: var(--gray-text);
+}
+
+.profile__time {
+  color: var(--gray-text);
+  font-size: 12px;
+}
+
+.profile__column:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.profile__message-count {
+  margin-top: 5px;
+  background-color: tomato;
+  color: white;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 600;
+}

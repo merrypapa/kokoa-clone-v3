@@ -1,0 +1,85 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  background-color: #f9f9fa;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.nav__ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+body a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav__li:nth-child(2) span {
+  background-color: tomato;
+  color: white;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 600;
+  position: absolute;
+  top: -8px;
+  left: 12px;
+  will-change: transform;
+  animation: message-notification 0.7s ease-in-out infinite;
+}
+
+.nav__li:nth-child(2) {
+  position: relative;
+}
+
+@keyframes message-notification {
+  0% {
+  }
+  25% {
+    transform: translateY(-2.5px) rotate(10deg);
+  }
+  50% {
+    transform: translateY(-5px) rotate(0deg);
+  }
+  75% {
+    transform: translateY(-2.5px) rotate(-10deg);
+  }
+  100% {
+    transfrom: none;
+  }
+}
+
+@keyframes nav-show {
+  from {
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+.nav__li {
+  transform: translateY(50px);
+  animation: nav-show 0.3s ease-in-out forwards;
+}
+
+.nav__li:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.nav__li:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.nav__li:last-child {
+  animation-delay: 0.6s;
+}

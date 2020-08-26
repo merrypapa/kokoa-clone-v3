@@ -1,0 +1,210 @@
+.chatting-room__screen-header__title {
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.chatting-room__screen-header,
+.chatting-room__status-bar,
+.chatting-room-screen {
+  background-color: #98b5ce;
+}
+
+.message-date {
+  text-align: center;
+  margin-bottom: 30px;
+  animation: fadeIn-messageDate 0.75s ease-in-out forwards;
+}
+
+@keyframes fadeIn-messageDate {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+  }
+}
+
+.message-date span {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: white;
+  padding: 8px 16px;
+  width: fit-content;
+  border-radius: 30px;
+  font-size: 13px;
+}
+
+.incoming-message {
+  margin-top: 15px;
+  display: flex;
+  align-items: flex-start;
+  animation: fadeIn-incoming 0.75s ease-in-out forwards;
+}
+
+@keyframes fadeIn-incoming {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+  }
+}
+
+.incoming-message img {
+  width: 50px;
+  height: 50px;
+  border-radius: 18px;
+}
+
+.incoming-message__column:last-child {
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  box-sizing: border-box;
+  /* height: 100px; */
+}
+.incoming-message__author {
+  color: var(--gray-text);
+  font-size: 14px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.incoming-message__container {
+  display: flex;
+  align-items: flex-end;
+}
+
+.incoming-message__contents {
+  background-color: white;
+  padding: 10px;
+  border-radius: 15px;
+  border-top-left-radius: 0px;
+}
+
+.incoming-message__time {
+  color: var(--gray-text);
+  font-size: 11px;
+  padding: 0px 5px;
+}
+
+.outgoing-message {
+  justify-content: flex-end;
+  animation: fadeIn-outcoming 0.75s ease-in-out forwards;
+}
+
+@keyframes fadeIn-outcoming {
+  from {
+    transform: translateX(+100px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+  }
+}
+.outgoing-message__contents {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 0px;
+  background-color: yellow;
+}
+
+.outgoing-message__container {
+  flex-direction: row-reverse;
+}
+
+.keypad {
+  display: flex;
+  justify-content: space-between;
+  background-color: #feffff;
+  align-items: center;
+  padding: 5px 0px;
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.keypad__column:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  transition: all 0.3s ease-in-out;
+}
+
+.keypad__attach {
+  background-color: transparent;
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  border-radius: 6px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.keypad__column:nth-child(2) {
+  width: 85%;
+  display: flex;
+  transition: all 0.3s ease-in-out;
+  align-items: center;
+}
+
+.keypad__insert-bar {
+  width: 90%;
+  height: 30px;
+  border-radius: 25px;
+  border: var(--border-setting);
+  background-color: #f8f8f8;
+  transition: all 0.3s ease-in-out;
+}
+
+.keypad__column:last-child {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 17%;
+  right: 8%;
+  transition: all 0.3s ease-in-out;
+}
+
+.keypad__emoticon {
+  font-size: 22px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.keypad__send {
+  background-color: yellow;
+  width: 29px;
+  height: 29px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.keypad input:focus {
+  outline: none;
+  width: 120%;
+}
+
+.keypad:focus-within .keypad__column:first-child,
+.keypad:focus-within .keypad__column:last-child {
+  opacity: 0;
+}
+
+.keypad:focus-within {
+  transform: translateY(80px);
+}
+
+.keypad:focus-within .keypad__column:nth-child(2) {
+  width: 110%;
+  transform: translateY(-80px) translateX(-7%);
+}

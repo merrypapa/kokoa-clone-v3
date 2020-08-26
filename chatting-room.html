@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Chatting-room</title>
+  </head>
+  <body class="chatting-room-screen">
+    <div class="status-bar chatting-room__status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>80%</span>
+        <i class="fas fa-battery-three-quarters"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+    <header class="screen-header chatting-room__screen-header">
+      <div class="settings__screen-header__column">
+        <a href="chats.html"><i class="fas fa-chevron-left fa-lg"></i></a>
+      </div>
+      <div class="settings__screen-header__column">
+        <h4 class="chatting-room__screen-header__title">Sungbong Nam</h4>
+      </div>
+      <div class="settings__screen-header__column">
+        <a href="#"><i class="fas fa-search fa-lg"></i></a>
+        <a href="#"><i class="fas fa-bars fa-lg"></i></a>
+      </div>
+    </header>
+    <main class="chatting-room-main">
+      <div class="message-date">
+        <span>Tuesday, June 30, 2020</span>
+      </div>
+      <div class="incoming-message">
+        <div class="incoming-message__column">
+          <img src="/img/sung.jpg" alt="" />
+        </div>
+        <div class="incoming-message__column">
+          <div class="incoming-message__author"><span>Sungbong Nam</span></div>
+          <div class="incoming-message__container">
+            <div class="incoming-message__contents">
+              <span>Hi! I'm sungbong very nice to meet you bro</span>
+            </div>
+            <div class="incoming-message__time"><span>21:27</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="incoming-message outgoing-message">
+        <div class="incoming-message__column outgoing-message__column">
+          <div class="incoming-message__container outgoing-message__container">
+            <div class="incoming-message__contents outgoing-message__contents">
+              <span>Hello Sung! I'm happy to work with you</span>
+            </div>
+            <div class="incoming-message__time outgoing-message__time">
+              <span>21:27</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <form action="" class="keypad">
+      <div class="keypad__column">
+        <button class="keypad__attach">+</button>
+      </div>
+      <div class="keypad__column">
+        <input type="text" class="keypad__insert-bar" />
+      </div>
+      <div class="keypad__column">
+        <a href="#" class="keypad__emoticon"
+          ><i class="far fa-smile-wink"></i
+        ></a>
+        <a href="#" class="keypad__send"><i class="fas fa-arrow-up"></i></a>
+      </div>
+    </form>
+    <div class="screen-size-warning">
+      <h1>Please reduce the width</h1>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/3647f9bb99.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

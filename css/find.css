@@ -1,0 +1,125 @@
+.recommended-friends {
+  margin: 15px 0px;
+  padding: 15px 0px;
+  border-top: var(--border-setting);
+  border-bottom: var(--border-setting);
+  color: var(--gray-text);
+}
+
+.recommended-friends__title {
+  font-size: 15px;
+}
+
+.recommended-friends__comment {
+  font-size: 15px;
+  margin: 50px 0px;
+  text-align: center;
+}
+
+.open-chat__header {
+  display: flex;
+  justify-content: space-between;
+  color: var(--gray-text);
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.open-chat__header__go-home {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.open-chat__li__title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.open-chat__li__hashtag {
+  color: var(--gray-text);
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.open-chat__li__profile {
+  display: flex;
+  align-items: center;
+}
+
+.open-chat__li__rep-img {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+}
+
+.open-chat__li__members {
+  color: var(--gray-text);
+  font-size: 14px;
+}
+
+.open-chat__li__status {
+  color: palevioletred;
+  font-size: 14px;
+}
+
+.open-chat__li__profile .devider {
+  width: 1px;
+  margin: 0px 7px;
+  height: 14px;
+  background-color: var(--gray-text);
+}
+
+.open-chat__main-img {
+  width: 80px;
+  height: 80px;
+}
+
+.open-chat__li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: var(--border-setting);
+  padding: 10px 0px;
+}
+
+.open-chat__li:last-child {
+  border-bottom: none;
+}
+
+.open-chat__likes {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 8px;
+  position: absolute;
+  padding: 3px 6px;
+  font-size: 12px;
+  bottom: 8px;
+  left: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.open-chat__likes:hover i {
+  will-change: transform;
+  animation: heartBeat 1s ease-in-out infinite;
+}
+
+@keyframes heartBeat {
+  0% {
+    color: white;
+  }
+  50% {
+    color: tomato;
+    transform: scale(1.5);
+  }
+  100% {
+    color: white;
+  }
+}
+
+.open-chat__li__column:last-child {
+  position: relative;
+}
+
+.open-chat__likes i {
+  margin-right: 3px;
+}

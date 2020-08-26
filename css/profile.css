@@ -1,0 +1,35 @@
+.profile {
+  /* margin-top: 125px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.profile__photo {
+  /* border: 1px solid rgba(0, 0, 0, 0.2); */
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+.profile__photo__user {
+  width: 55px;
+  height: 55px;
+}
+
+.profile__title__user {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.profile__status__user {
+  margin-top: 5px;
+  color: var(--gray-text);
+}
+
+.profile__status__user i {
+  color: tomato;
+}
+
+.profile__column {
+  display: flex;
+  align-items: center;
+}

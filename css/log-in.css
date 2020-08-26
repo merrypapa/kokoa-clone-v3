@@ -1,0 +1,52 @@
+.user-input {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 20px;
+}
+
+.log-in {
+  display: flex;
+  flex-direction: column;
+}
+
+.log-in input,
+.sign-up {
+  border: none;
+  padding: 15px 0px;
+}
+
+.log-in input:not([type="submit"]) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.log-in__log-in-btn {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.user-input a {
+  text-align: center;
+  margin-top: 15px;
+  text-decoration: none;
+  color: inherit;
+  font-size: 12px;
+}
+
+.log-in input:focus,
+.sign-up {
+  outline: none;
+  border-color: rgba(0, 0, 0, 0.8);
+}
+
+.log-in__account::placeholder,
+.log-in__password::placeholder {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 15px;
+}
+
+.sign-up,
+.log-in__log-in-btn {
+  background-color: var(--yellow);
+  cursor: pointer;
+  font-size: 15px;
+}

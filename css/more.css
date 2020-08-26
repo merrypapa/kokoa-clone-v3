@@ -1,0 +1,47 @@
+.more__icon-tools {
+  padding: 15px 0px;
+}
+
+.suggestions {
+  margin-top: 10px;
+  padding-top: 20px;
+  border-top: var(--border-setting);
+  font-size: 15px;
+}
+
+.suggestions__icon-tools i {
+  color: white;
+  font-size: 20px;
+}
+
+.suggestions__icon {
+  background-color: yellow;
+  border-radius: 10px;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.suggestions__icon-tools {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+.suggestions__icon-tools span {
+  margin-top: 10px;
+}
+
+.more__icon-tools__icon,
+.more__icon-tools__text {
+  padding: 5px 0px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

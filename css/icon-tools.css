@@ -1,0 +1,29 @@
+.icon-tools {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.icon-tools__func {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  /* height: 100px; */
+}
+
+.icon-tools__func span {
+  font-size: 12px;
+}
+
+.icon-tools__icon,
+.icon-tools__text {
+  padding: 10px 0px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

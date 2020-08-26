@@ -1,0 +1,28 @@
+@import "reset.css";
+@import "status-bar.css";
+@import "welcome.css";
+@import "log-in.css";
+@import "nav.css";
+@import "screen-header.css";
+@import "profile.css";
+@import "friends-list.css";
+@import "find.css";
+@import "icon-tools.css";
+@import "more.css";
+@import "settings.css";
+@import "chatting-room.css";
+@import "screen-size-warning.css";
+@import "variables.css";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+
+body {
+  font-family: "Open Sans";
+  height: 300vh;
+}
+
+main {
+  margin-top: 80px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px var(--padding-hor);
+}
