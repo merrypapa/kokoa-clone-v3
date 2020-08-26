@@ -7,6 +7,7 @@
 .chatting-room__status-bar,
 .chatting-room-screen {
   background-color: #98b5ce;
+  z-index: 5;
 }
 
 .message-date {
